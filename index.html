@@ -5,55 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-
-    <!--=============== REMIX ICONS ===============-->
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-      rel="stylesheet"
+      rel="shortcut icon"
+      href="assets/img/car-favicon.png"
+      type="image/x-icon"
     />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css"
+    />
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-    <title>Responsive car website - Bedimcode</title>
+    <title>Responsive Car Rental Website</title>
   </head>
   <body>
     <!--==================== HEADER ====================-->
-    <header class="header" id="header">
+    <header class="header blur-header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">
-          <i class="ri-steering-line"></i>
-          Elecar
-        </a>
+        <a href="#" class="nav__logo"> <i class="ri-car-line"></i>Car </a>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
+              <a href="#new" class="nav__link">News</a>
             </li>
             <li class="nav__item">
-              <a href="#popular" class="nav__link">Popular</a>
+              <a href="#shop" class="nav__link">Shop</a>
             </li>
             <li class="nav__item">
-              <a href="#featured" class="nav__link">Featured</a>
+              <a href="#care" class="nav__link">Care</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
             </li>
           </ul>
 
+          <!-- Close button -->
           <div class="nav__close" id="nav-close">
             <i class="ri-close-line"></i>
           </div>
         </div>
 
-        <!-- Toggle Button -->
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="ri-menu-line"></i>
+        <div class="nav__actions">
+          <i class="ri-user-line"></i>
+          <i class="ri-shopping-cart-line"></i>
+
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
         </div>
       </nav>
     </header>
@@ -61,42 +68,334 @@
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
-      <section class="home section" id="home"></section>
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <img
+            src="assets/img/mercedes-car.png"
+            alt="image"
+            class="home__img"
+          />
+          <div class="home__data">
+            <h1 class="home__title">
+              THE BEST LUXURY <br />
+              <span>CARS</span> FOR <br />
+              YOUR HOME <br />
+            </h1>
 
-      <!--==================== ABOUT ====================-->
-      <section class="about section" id="about"></section>
+            <p class="home__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              quod, voluptates, quae, quibusdam quos
+            </p>
 
-      <!--==================== POPULAR ====================-->
-      <section class="popular section" id="popular"></section>
+            <div class="home__buttons">
+              <a href="#" class="button">
+                <span>
+                  <i class="ri-arrow-right-line"></i>
+                </span>
+                GO TO SHOP
+              </a>
 
-      <!--==================== FEATURES ====================-->
-      <section class="features section"></section>
+              <a href="#" class="button__link">MORE DETAILS</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <!--==================== FEATURED ====================-->
-      <section class="featured section" id="featured"></section>
+      <!--==================== NEWS ====================-->
+      <section class="new section" id="new">
+        <div class="new__container container grid">
+          <div class="new__data">
+            <h2 class="section__title">
+              NEW CARS FOR <br />
+              TO ADD TO YOUR HOME
+            </h2>
 
-      <!--==================== OFFER ====================-->
-      <section class="offer section"></section>
+            <p class="new__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              quod, voluptates, quae, quibusdam quos.
+            </p>
+          </div>
+          <div class="new__content grid">
+            <article class="new__card">
+              <img src="assets/img/ferrari.png" alt="image" class="new__img" />
+              <h2 class="new__title">Fast</h2>
+            </article>
 
-      <!--==================== LOGOS ====================-->
-      <section class="logos section"></section>
+            <article class="new__card">
+              <img
+                src="assets/img/mercedes-gle.png"
+                alt="image"
+                class="new__img"
+              />
+              <h2 class="new__title">Luxury</h2>
+            </article>
+
+            <article class="new__card">
+              <img
+                src="assets/img/lexus-luxury.png"
+                alt="image"
+                class="new__img"
+              />
+              <h2 class="new__title">Reliable</h2>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SHOP ====================-->
+      <section class="shop section" id="shop">
+        <h2 class="section__title">THE BEST CARS</h2>
+
+        <div class="shop__container container grid">
+          <article class="shop__card">
+            <img
+              src="assets/img/porsche-911-gt3.png"
+              alt="image"
+              class="shop__img"
+            />
+
+            <h3 class="shop__title">Porsche GT3 RS</h3>
+            <span class="shop__price">$15</span>
+
+            <button class="shop__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="shop__card">
+            <img
+              src="assets/img/mercedes-car.png"
+              alt="image"
+              class="shop__img"
+            />
+
+            <h3 class="shop__title">Mercedes AMG GT</h3>
+            <span class="shop__price">$10</span>
+
+            <button class="shop__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="shop__card">
+            <img src="assets/img/bmw-m4.png" alt="image" class="shop__img" />
+
+            <h3 class="shop__title">BMW M4</h3>
+            <span class="shop__price">$25</span>
+
+            <button class="shop__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="shop__card">
+            <img
+              src="assets/img/aston-martin-vanquish.png"
+              alt="image"
+              class="shop__img"
+            />
+
+            <h3 class="shop__title">Aston Martin Vanquish</h3>
+            <span class="shop__price">$30</span>
+
+            <button class="shop__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="shop__card">
+            <img src="assets/img/audi-rs7.png" alt="image" class="shop__img" />
+
+            <h3 class="shop__title">Audi RS7</h3>
+            <span class="shop__price">$20</span>
+
+            <button class="shop__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== CARE ====================-->
+      <section class="care section" id="care">
+        <h2 class="section__title">
+          LIVE IN A NEW LIFESTYLE <br />
+          AND OWN THE STREETS
+        </h2>
+
+        <div class="care__container container grid">
+          <img
+            src="assets/img/aston-martin-vanquish.png"
+            alt="image"
+            class="care__img"
+          />
+
+          <ul class="care__list">
+            <li class="care__item">
+              <i class="ri-checkbox-fill"></i>
+              <p>Fast</p>
+            </li>
+            <li class="care__item">
+              <i class="ri-checkbox-fill"></i>
+              <p>Luxurious</p>
+            </li>
+            <li class="care__item">
+              <i class="ri-checkbox-fill"></i>
+              <p>Reliable</p>
+            </li>
+            <li class="care__item">
+              <i class="ri-checkbox-fill"></i>
+              <p>Bold</p>
+            </li>
+            <li class="care__item">
+              <i class="ri-checkbox-fill"></i>
+              <p>Perfection</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">
+          INTERESTED IN FINDING YOUR CAR <br />
+          CONTACT US
+        </h2>
+
+        <div class="contact__container container grid">
+          <img
+            src="assets/img/porsche-911-gt3.png"
+            alt="image"
+            class="contact__img"
+          />
+
+          <div class="contact__content">
+            <div>
+              <h3 class="contact__title">Write to us</h3>
+
+              <!-- ADD IN SOCIALS================ -->
+              <div class="contact__social">
+                <a href="#" target="_blank">
+                  <i class="ri-whatsapp-fill"></i>
+                </a>
+
+                <a href="#" target="_blank">
+                  <i class="ri-messenger-fill"></i>
+                </a>
+
+                <a href="#" target="_blank">
+                  <i class="ri-mail-fill"></i>
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="contact__title">Call us at the numbers below</h3>
+
+              <address class="contact__info">
+                +1 234 567 890 <br />
+                +1 234 567 890
+              </address>
+            </div>
+
+            <div>
+              <h3 class="contact__title">Find us here</h3>
+
+              <address class="contact__info">123 Street, City, Country</address>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer section"></footer>
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div>
+          <a href="#" class="footer__logo"> <i class="ri-car-line"></i>Car </a>
+
+          <p class="footer__description">
+            Choose the best <br />
+            plants for your home.
+          </p>
+        </div>
+
+        <div class="footer__content grid">
+          <div>
+            <h3 class="footer__title">COMPANY</h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">About us</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Products</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Features</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">INFORMATION</h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">News</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">FAQs</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">SOCIAL MEDIA</h3>
+
+            <div class="footer__social">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-twitter-x-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="footer__copy">&#169; All right reserved</span>
+    </footer>
 
     <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
 
-    <!--=============== SCROLL REVEAL ===============-->
-    <script src=""></script>
-
-    <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
-
-    <!--=============== MIXITUP JS ===============-->
+    <!--=============== SCROLLREVEAL ===============-->
     <script src=""></script>
 
     <!--=============== MAIN JS ===============-->
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
