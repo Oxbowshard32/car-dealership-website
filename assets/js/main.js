@@ -71,3 +71,14 @@ const scrollActive = () => {
 window.addEventListener("scroll", scrollActive);
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "80px",
+  duration: 2500,
+  delay: 200,
+});
+
+sr.reveal(".home__img, .new__data, .care__img, .contact_content");
+sr.reveal(".home__data, .care__list, .contact__img", { delay: 400 });
+sr.reveal(".new__card", { delay: 300, interval: 100 });
+sr.reveal(".shop__card", { interval: 100 });
